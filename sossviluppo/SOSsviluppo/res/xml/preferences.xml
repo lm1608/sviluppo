@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orderingFromXml="true">
+	<EditTextPreference android:order="1" android:key="textData"
+		android:title="Number to call"></EditTextPreference>
+	<CheckBoxPreference android:key="enabledData1"
+		android:title="Call" android:order="2">
+	</CheckBoxPreference>
+	<CheckBoxPreference android:key="enabledData2"
+		android:title="Message" android:order="3" android:persistent="1">
+	</CheckBoxPreference>
+	<PreferenceCategory android:title="Figure to draw"
+		android:order="4">
+		<ListPreference android:entryValues="@array/figure"
+			android:entries="@array/figure" android:title="Figure"
+			android:order="4" android:key="figure"></ListPreference>
+	</PreferenceCategory>
+</PreferenceScreen>
